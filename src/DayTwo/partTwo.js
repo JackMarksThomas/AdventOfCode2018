@@ -19,8 +19,6 @@ const partTwo = (input) => {
       const diff = charsI.reduce((a, c, k) => a + (c === charsJ[k] ? 0 : 1), 0);
 
       if (diff === 1) {
-        console.log(arr[i]);
-        console.log(arr[j]);
         return createFinalString(arr[i], arr[j]);
       }
     }
